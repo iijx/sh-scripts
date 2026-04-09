@@ -116,7 +116,7 @@ echo "🌍 生产环境隧道"
 echo "=================================================="
 
 # 生产环境隧道
-start_tunnel "MongoDB (生产)" "$LOCAL_PROD_MONGO_PORT" "$MONGO_PORT" "$PROD_VPS_USER" "$PROD_VPS_HOST" "mongodb prod tunnel started"
+# start_tunnel "MongoDB (生产)" "$LOCAL_PROD_MONGO_PORT" "$MONGO_PORT" "$PROD_VPS_USER" "$PROD_VPS_HOST" "mongodb prod tunnel started"
 start_tunnel "Postgres (生产)" "$LOCAL_PROD_POSTGRES_PORT" "$POSTGRES_PORT" "$PROD_VPS_USER" "$PROD_VPS_HOST" "postgres prod tunnel started"
 
 # 生产环境示例 (如果要加 Redis)
@@ -128,7 +128,7 @@ echo "🧪 测试环境隧道"
 echo "=================================================="
 
 # 测试环境隧道
-start_tunnel "MongoDB (测试)" "$LOCAL_DEV_MONGO_PORT" "$MONGO_PORT" "$DEV_VPS_USER" "$DEV_VPS_HOST" "mongodb dev tunnel started"
+# start_tunnel "MongoDB (测试)" "$LOCAL_DEV_MONGO_PORT" "$MONGO_PORT" "$DEV_VPS_USER" "$DEV_VPS_HOST" "mongodb dev tunnel started"
 start_tunnel "Postgres (测试)" "$LOCAL_DEV_POSTGRES_PORT" "$POSTGRES_PORT" "$DEV_VPS_USER" "$DEV_VPS_HOST" "postgres dev tunnel started"
 
 # 测试环境示例 (如果要加 Redis)

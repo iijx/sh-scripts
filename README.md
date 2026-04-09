@@ -12,3 +12,6 @@
 ### png2svg
 1. 安装：brew install imagemagick
 2. 安装：brew install potrace
+
+### secrets.sh
+1. 安装 brew install gnupg
