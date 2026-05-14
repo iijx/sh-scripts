@@ -118,9 +118,7 @@ echo "=================================================="
 # 生产环境隧道
 # start_tunnel "MongoDB (生产)" "$LOCAL_PROD_MONGO_PORT" "$MONGO_PORT" "$PROD_VPS_USER" "$PROD_VPS_HOST" "mongodb prod tunnel started"
 start_tunnel "Postgres (生产)" "$LOCAL_PROD_POSTGRES_PORT" "$POSTGRES_PORT" "$PROD_VPS_USER" "$PROD_VPS_HOST" "postgres prod tunnel started"
-
-# 生产环境示例 (如果要加 Redis)
-# start_tunnel "Redis (生产)" "$LOCAL_PROD_REDIS_PORT" "$PROD_REDIS_PORT" "$PROD_VPS_USER" "$PROD_VPS_HOST" "连接: redis-cli -p $LOCAL_PROD_REDIS_PORT"
+start_tunnel "Redis (生产)" "$LOCAL_PROD_REDIS_PORT" "$REDIS_PORT" "$PROD_VPS_USER" "$PROD_VPS_HOST" "连接: redis-cli -p $LOCAL_PROD_REDIS_PORT"
 
 echo ""
 echo "=================================================="
@@ -130,9 +128,7 @@ echo "=================================================="
 # 测试环境隧道
 # start_tunnel "MongoDB (测试)" "$LOCAL_DEV_MONGO_PORT" "$MONGO_PORT" "$DEV_VPS_USER" "$DEV_VPS_HOST" "mongodb dev tunnel started"
 start_tunnel "Postgres (测试)" "$LOCAL_DEV_POSTGRES_PORT" "$POSTGRES_PORT" "$DEV_VPS_USER" "$DEV_VPS_HOST" "postgres dev tunnel started"
-
-# 测试环境示例 (如果要加 Redis)
-# start_tunnel "Redis (测试)" "$LOCAL_DEV_REDIS_PORT" "$DEV_REDIS_PORT" "$DEV_VPS_USER" "$DEV_VPS_HOST" "连接: redis-cli -p $LOCAL_DEV_REDIS_PORT"
+start_tunnel "Redis (测试)" "$LOCAL_DEV_REDIS_PORT" "$REDIS_PORT" "$DEV_VPS_USER" "$DEV_VPS_HOST" "连接: redis-cli -p $LOCAL_DEV_REDIS_PORT"
 
 echo "--------------------------------------------------"
 echo "🎉 所有任务执行完毕。"
